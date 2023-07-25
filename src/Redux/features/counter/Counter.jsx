@@ -25,7 +25,7 @@ const Counter = () => {
 
         <h2
           onClick={() => {
-            dispatch(incrementByAmount(10));
+            dispatch(incrementByAmount(count));
           }}
         >
           <button>Inc by 10</button>
