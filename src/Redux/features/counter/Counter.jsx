@@ -12,7 +12,7 @@ const Counter = () => {
             dispatch(increment());
           }}
         >
-          <button>+</button>
+          <button>➕</button>
         </h1>
         <div>Count_Number : {count}</div>
         <h2
@@ -20,12 +20,12 @@ const Counter = () => {
             dispatch(decrement());
           }}
         >
-          <button>-</button>
+          <button>➖</button>
         </h2>
 
         <h2
           onClick={() => {
-            dispatch(incrementByAmount(count));
+            dispatch(incrementByAmount(10));
           }}
         >
           <button>Inc by 10</button>
