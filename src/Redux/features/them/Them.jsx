@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import {changeTextColor} from "./Themslice" 
+import '../counter/counnter.css'
 
 const Them = () => {
     const [color, setColor] = useState("white")
@@ -9,8 +10,8 @@ const Them = () => {
     <div>
         <br />
         <center>
-        <input type="text" onChange={(e)=>{setColor(e.target.value)}}  />
-        <button onClick={()=>{dispatch(changeTextColor(color))}}>chang Text Color</button>
+        <input className='inpt' type="text" onChange={(e)=>{setColor(e.target.value)}}  />
+        <button className="btn" onClick={()=>{dispatch(changeTextColor(color))}}>chang Text Color</button>
         </center>
     </div>
   )
