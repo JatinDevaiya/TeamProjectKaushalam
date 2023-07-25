@@ -28,13 +28,13 @@ const Counter = () => {
 
         <input type="number" onChange={(e)=>{setincbynum(Number(e.target.value))}}/>
         {console.log(incbynum)}
-        <h2
+        <span
           onClick={() => {
             dispatch(incrementByAmount(incbynum));
           }}
         >
-          <button>Increment by : </button>
-        </h2>
+          <button>Increment by this input field </button>
+        </span>
       </center>
     </>
   );
